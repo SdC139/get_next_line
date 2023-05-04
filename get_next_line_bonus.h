@@ -18,6 +18,14 @@
 # include <stdlib.h>
 # include <unistd.h>
 
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
+
+# ifndef OPEN_MAX
+#  define OPEN_MAX 256
+# endif
+
 size_t	ft_strlen(char *str);
 char	*ft_strchr(char *s, int c);
 char	*ft_strjoin(char *sx_str, char *buff);

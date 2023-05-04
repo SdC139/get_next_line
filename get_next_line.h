@@ -6,7 +6,7 @@
 /*   By: sde-carl <sde-carl@student.42roma.it >     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 17:41:07 by sde-carl          #+#    #+#             */
-/*   Updated: 2023/05/04 16:44:25 by sde-carl         ###   ########.fr       */
+/*   Updated: 2023/05/04 17:37:23 by sde-carl         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,10 @@
 # include <stdlib.h>
 # include <stdio.h>
 # include <fcntl.h>
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 42
+# endif
 
 size_t	ft_strlen(char *str);
 char	*ft_strchr(char *s, int c);
